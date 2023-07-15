@@ -1,0 +1,24 @@
+{
+  "name": "sufi-funda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "dev:server": "nodemon --watch './**/*.ts' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^22.1.0",
+    "puppeteer": "^20.8.1",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
+}
